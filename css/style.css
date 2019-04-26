@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body,html {
+	height: 100%;
+	font-family: Roboto;
+	background-color: #FAFAFA;
+}
+
+#cell1{
+	background-image: url(https://www.kopekpansiyonu.gen.tr/wp-content/uploads/2016/06/tall_grass-1024x640.jpg);
+	border: 4px #FAFAFA;
+}
+
+#cell2,#cell3,#cell4 {
+	background-image: url(https://www.kopekpansiyonu.gen.tr/wp-content/uploads/2016/06/tall_grass-1024x640.jpg);
+	background-position: right top;
+	background-repeat: no-repeat;
+	border: 4px #FAFAFA;
+}
+
+#show0,#show1,#show2 {
+	font-size: 36px;
+	color: #FAFAFA;
+}
+
+
+
+#forecastbar{
+	font-size: 14px;
+	font-family: Roboto;
+	color: #FAFAFA;
+}
+
+#forecastbar1,#forecastbar2,#forecastbar3{
+	background-image: url(http://avante.biz/wp-content/uploads/Blank-Wallpaper/Blank-Wallpaper-021.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+
+
+
+#currStatus, #currStatus2{
+	color: #FAFAFA;
+}
+
+#Date {
+	font-size: 18px;
+	color: #FAFAFA;
+}
+
+#currWeatherTemp{
+	font-size: 56px;
+	color: #FAFAFA;
+}
+
+#currWeatherIcon{
+	width: 150%;
+}
+
