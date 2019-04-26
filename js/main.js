@@ -154,6 +154,8 @@
 		});
 
 		$(document).ready(function() {
+
+
 			var curWeekDay = mydate.getDay(); /*здесь расчет даты для следующих дней*/
 
 
@@ -212,7 +214,7 @@
 		$(document).ready(function() {    /*дополнительный прогноз на сегодня через каждые 3 часа*/
 
 			var city = "Rostov-on-Don";
-				var key = '11cbd924f81424298f2e371ea09fc703';
+			var key = '11cbd924f81424298f2e371ea09fc703';
 
 				$.ajax({
 					url: 'http://api.openweathermap.org/data/2.5/forecast',
@@ -231,15 +233,18 @@
 						var endDate = date + ' ' + '21:00:00';
 
 
-						var arr_time = ['00:00','03:00','06:00','09:00','12:00','15:00','18:00','21:00']
+						var arr_time = ['00:00','03:00','06:00','09:00','12:00','15:00','18:00','21:00'];
 
-
+	
+					
 						for (var i = 0; i < 40; i++) {
 							iterator += 1;
 							if (data.list[i].dt_txt == endDate){
 								break;
 							}
 						}
+
+
 	
 
 						var temp = 0;
@@ -253,14 +258,17 @@
 							for (var i = 8 - iterator; i < 8; i++) {
 								arr_info[temp] = arr_time[i];
 								temp+=1;
+
 							}
 
 						}		
 				
 
-						if (iterator < 3){
+						if (iterator <= 3){
+
 							for (var i = 8 - iterator; i < 8; i++) {
 								arr_info[temp] = arr_time[i];
+
 								temp+=1;
 							}
 
@@ -268,6 +276,10 @@
 							for (var i = 0; i < 3 - iterator; i++) {
 								arr_info[temp] = arr_time[i];
 								temp+=1;
+							}
+
+							if (3-iterator == 0){
+								arr_info[temp] = arr_time[0];
 							}
 						}
 
