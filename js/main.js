@@ -30,7 +30,7 @@
 
 
 		$(document).ready(function() {
-			var city = "Moscow";
+			var city = "Rostov-on-Don";
 			var key = '11cbd924f81424298f2e371ea09fc703';
 
 
